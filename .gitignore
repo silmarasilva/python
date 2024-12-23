@@ -1,0 +1,8 @@
+# Ignorar arquivos temporarios
+tempCodeRunnerFile.py
+
+# Ignorar pasta do ambiente virtual
+venv/
+
+# Ignorar configurações do VS Code
+.vscode/
