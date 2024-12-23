@@ -1,0 +1,1 @@
+Teste do file "25_try_except_capturar_erros.py" feito com sucesso!
