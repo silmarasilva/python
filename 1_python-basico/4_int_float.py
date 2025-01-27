@@ -13,13 +13,13 @@ print (0) # int
 # positivo ou negativo com ponto flutuante.
 # float sem sinal é considerado positivo.
 
-# print(1.1, 10.11)
-# print(0.0, -1.6)
+print(1.1, 10.11) 
+print(0.0, -1.6)
 
 # A "funcao" type mostra o tipo que o Python inferiu ao valor.
 
-print( type ('Silmara') )
-print( type ('1') )
-print( type ('1.2'), type(1), type(-1.3), type(0.0) )
+print( type ('Silmara') ) # Saída: <class 'str'>
+print( type ('1') ) # Saída: <class 'str'>
+print( type ('1.2'), type(1), type(-1.3), type(0.0) ) # Saída: <class 'str'> <class 'int'> <class 'float'> <class 'float'>
 
 

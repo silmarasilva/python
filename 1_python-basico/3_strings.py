@@ -1,17 +1,25 @@
-# Python = Linguagem de programacao 
-# Tipo de tipagem = Dinâmica (Ele já detecta o tipo de dado, não precisamor informar pra ele que é um número inteiro, por exemplo) / Forte
+# Python: Linguagem de programação
+# Tipo de tipagem: Dinâmica (detecta automaticamente o tipo de dado) e Forte (não permite operações inválidas entre tipos diferentes, como somar um número com uma string).
 
-# str - > Strings são textos que estão dentro de aspas
+# Strings (str): São textos delimitados por aspas.
 
-# Aspas Simples
-print('Silmara Irons')
+# Exemplo 1: Uso de aspas simples
+print('Silmara Irons')  # Saída: Silmara Irons
 
-# Aspas Duplas
-print(" Silmara Irons")
+# Exemplo 2: Uso de aspas duplas
+print("Silmara Irons")  # Saída: Silmara Irons
 
-# Escape (pula o próxima caracter)
-print("Silmara \"Irons")
+# Exemplo 3: Uso do caractere de escape (\)
+# O caractere de escape (\) indica que o próximo caractere deve ser interpretado de forma especial.
+# Aqui, \" permite incluir aspas duplas dentro de uma string delimitada por aspas duplas.
+print("Silmara \"Irons\"")  # Saída: Silmara "Irons"
 
-print(r"Silmara \"Irons\"")
+# Exemplo 4: String raw (r antes da string)
+# Adicionando um 'r' antes das aspas, o Python trata a string como "raw" (bruta), 
+# ignorando o efeito do caractere de escape.
+print(r"Silmara \"Irons\"")  # Saída: Silmara \"Irons\"
 
-print(1, 'Silmara "Irons\"')
+# Exemplo 5: Misturando tipos na função print
+# A função print pode receber múltiplos argumentos separados por vírgulas.
+# Aqui, imprimimos um número inteiro e uma string.
+print(1, 'Silmara "Irons"')  # Saída: 1 Silmara "Irons"
