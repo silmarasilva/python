@@ -31,11 +31,14 @@ def testar_conta_bancaria():
         # Testa inicialização com saldos válidos e inválidos
         conta = ContaBancaria(100)
         assert conta.obter_saldo() == 100, "O saldo inicial deve ser 100."
+        # O comando assert é uma forma de verificar se uma condição é verdadeira durante a execução do programa. Se a condição for verdadeira, o programa continua executando normalmente. Se a condição for falsa, o programa lança uma exceção do tipo AssertionError. Se um assert falhar, ele interrompe o programa e exibe o erro com a
 
         try:
             ContaBancaria(-10)
         except ValueError as e:
             assert str(e) == "O saldo inicial não pode ser negativo."
+        # "except ValueError as e" É usado para capturar e tratar exceções específicas. Nesse caso, estamos capturando erros do tipo ValueError.O código dentro de um bloco try tenta ser executado. Se ocorrer uma exceção durante a execução do código, o Python pula para o bloco except correspondente. Aqui ele está testando a inicializacao som saldo inválido, negativo. O teste espera que o erro gerado tenha uma mensagem específica "O saldo inicial não pode ser negativo." O str(e) extrai a mensagem do erro para que possamos compará-la com o texto esperado. Se baterem é poque o meu código ContaBancária(-10) está funcionando como esperado. O construtor __init__ da classe ContaBancaria contém essa verificação: if saldo_inicial < 0: raise ValueError("O saldo inicial não pode ser negativo."). Como -10 < 0, a exceção ValueError é gerada com a mensagem "O saldo inicial não pode ser negativo.". Como um ValueError foi levantado, a execução pula para o bloco except: Aqui, e armazena a exceção levantada.
+
 
         # Testa depósitos
         conta.depositar(50)
